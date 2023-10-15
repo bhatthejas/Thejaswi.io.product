@@ -1,0 +1,38 @@
+#helpContent {
+    display: none;
+    position: absolute; 
+    /* top: 40px;  */
+}
+#toggleHelp {
+    display: none;
+}
+#helpButton {
+    background-color: #007bff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#helpButton:hover {
+    background-color: #0056b3;
+}
+#toggleHelp:checked ~ #helpContent {
+    display: block;
+}
+#helpContent {
+    width: 200px; 
+    padding: 20px;
+    color: white;
+    background-color:red;
+    border-radius: 10px;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
